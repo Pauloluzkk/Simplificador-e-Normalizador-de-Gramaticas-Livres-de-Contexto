@@ -5,12 +5,8 @@ Este repositório contém um programa em Python para simplificação e normaliza
 ## Estrutura dos Arquivos
 
 - `entrada.txt`: Contém a gramática original.
-- `saida_simplificada.txt`: Contém a gramática simplificada.
-- `saida_chomsky.txt`: Contém a gramática na forma normal de Chomsky.
-- `saida_greibach.txt`: Contém a gramática na forma normal de Greibach.
-- `saida_left_factoring.txt`: Contém a gramática após fatoração à esquerda.
-- `saida_no_left_recursion.txt`: Contém a gramática após remoção de recursão à esquerda.
-- `simplificacao_gramatica.py`: Código Python para simplificação e normalização da gramática.
+- `saida.txt`: Contém a gramática simplificada.
+- `main.py`: Código Python para simplificação e normalização da gramática.
 - `README.md`: Este documento.
 
 ## Conteúdo do Arquivo `entrada.txt`
@@ -23,3 +19,11 @@ A -> aA | B | ε
 B -> b | ε
 C -> cC | D
 D -> d
+```
+o arquivo `saida.txt` contém a saída gerada pelo programa que no primeiro caso é:
+
+```txt
+SIMPLIFICAÇÃO
+S -> aAa | aa | bBb | b
+A -> a | aA | a
+E -> b
