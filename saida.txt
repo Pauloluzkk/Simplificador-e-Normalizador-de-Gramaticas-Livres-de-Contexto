@@ -1,0 +1,4 @@
+SIMPLIFICAÇÃO
+S -> aAa | aa | bBb | b
+A -> a | aA | a
+E -> b
